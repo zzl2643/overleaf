@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+% Draw the light source
+\draw[fill=yellow] (0,0) circle (0.5cm) node {$S$};
+% Draw the lens
+\draw[fill=blue!20] (2,0) circle (1cm);
+\draw[fill=white] (2,0) circle (0.8cm);
+% Draw the object
+\draw[fill=gray!50] (4,0) ellipse (1cm and 2cm);
+\draw[fill=white] (4,0) circle (0.5cm);
+% Draw the knife edge
+\draw[fill=black] (6,0) -- (6,2.5) -- (7,2.5) -- (7,0) -- cycle;
+% Draw the screen
+\draw[fill=blue!20] (8,-2.5) rectangle (9,2.5) node[right] {$P$};
+% Draw the rays
+\draw[red,->] (0.5,0) -- (1.8,0);
+\draw[red,->] (2.2,0) -- (3.5,0);
+\draw[red,->] (3.5,0) -- (6,0);
+\draw[red,->] (6,0) -- (8,0);
+\draw[red,->] (0.5,0.5) -- (1.8,0.5);
+\draw[red,->] (2.2,0.5) -- (3.5,1.5);
+\draw[red,->] (3.5,1.5) -- (6,1.5);
+\draw[red,->] (6,1.5) -- (8,1.5);
+\draw[red,->] (0.5,-0.5) -- (1.8,-0.5);
+\draw[red,->] (2.2,-0.5) -- (3.5,-1.5);
+\draw[red,->] (3.5,-1.5) -- (6,-1.5);
+\draw[red,->] (6,-1.5) -- (8,-1.5);
+% Draw the labels
+\node at (4,0) {$O$};
+\node at (8,0) {$I$};
+\node at (6,0) {$K$};
+\node at (2,0) {$L$};
+\node[below] at (0,-0.5) {光源};
+\node[below] at (4,-2) {物体};
+\node[below] at (6,-2.5) {刀片};
+\node[below] at (8,-2.5) {屏幕};
+\end{tikzpicture}
